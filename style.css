@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 13%, rgba(100,252,70,1) 100%);
+  font-family: 'Poppins', sans-serif;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  overflow:hidden;
+  margin: 0;
+}
+
+.btn{
+  /* background: rgb(27, 83, 37); */
+  border-radius: 5px;
+  border:none;
+  color:rgb(242, 252, 241);
+  -moz-text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+-webkit-text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+-ms-text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  cursor: pointer;
+  background: linear-gradient(30deg, #fcab39, #d1c219);
+  position: relative;
+  box-shadow: 0px -6px 36px 0px #fbeb36, 0px 0px 6px 0px #ffb347;
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  top:-3px;
+  bottom:-3px;
+  left:-3px;
+  right:-3px;
+  border-radius: 50%;
+  filter: blur(10px);
+  background: linear-gradient(30deg,rgb(251 235 54 / 30%) 20%,rgb(255 255 255 / 80%));
+  z-index: 100;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+.btn:focus{
+  outline: none;
+}
